@@ -3,8 +3,8 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <body>
-	<h1>Title : ${title}</h1>
-	<h1>Message : ${message}</h1>
+	<h1>TITULO : ${title}</h1>
+	<h1>MENSAJE : ${message}</h1>
 
 	<sec:authorize access="hasRole('ROLE_USER')">
 		<!-- For login user -->
@@ -21,12 +21,14 @@
 
 		<c:if test="${pageContext.request.userPrincipal.name != null}">
 			<h2>
-				User : ${pageContext.request.userPrincipal.name} | <a
+				Usuario : ${pageContext.request.userPrincipal.name} | <a
 					href="javascript:formSubmit()"> Logout</a>
 			</h2>
 		</c:if>
 
 
 	</sec:authorize>
+                
+      
 </body>
 </html>

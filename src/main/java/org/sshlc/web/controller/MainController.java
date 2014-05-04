@@ -1,4 +1,4 @@
-package com.sshlc.web.controller;
+package org.sshlc.web.controller;
 
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -17,8 +17,8 @@ public class MainController {
 	public ModelAndView defaultPage() {
 
 		ModelAndView model = new ModelAndView();
-		model.addObject("title", "Spring Security Login Form - Database Authentication");
-		model.addObject("message", "This is default page!");
+		model.addObject("title", "SISTEMA INTEGRAL MEDICO ADMINISTRATIVO");
+		model.addObject("message", "Aqui va la entrada");
 		model.setViewName("hello");
 		return model;
 
