@@ -18,10 +18,13 @@
 
 	<c:if test="${pageContext.request.userPrincipal.name != null}">
 		<h2>
-			Welcome : ${pageContext.request.userPrincipal.name} | <a
+			Bienvenido : ${pageContext.request.userPrincipal.name} | <a
 				href="javascript:formSubmit()"> Logout</a>
 		</h2>
 	</c:if>
-
+        
+        <div class="jumbotron">
+            Observacion : ${detalles}
+        </div>
 </body>
 </html>

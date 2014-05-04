@@ -24,12 +24,13 @@ public class MainController {
 
 	}
 
-	@RequestMapping(value = "/admin**", method = RequestMethod.GET)
+	@RequestMapping(value = "/inventarios**", method = RequestMethod.GET)
 	public ModelAndView adminPage() {
 
 		ModelAndView model = new ModelAndView();
 		model.addObject("title", "Spring Security Login Form - Database Authentication");
-		model.addObject("message", "This page is for ROLE_ADMIN only!");
+		model.addObject("message", "Permiso para inventarios!");
+                model.addObject("detalles", "Favor de asignar el rol !");
 		model.setViewName("admin");
 
 		return model;
